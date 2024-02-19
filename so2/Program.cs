@@ -76,7 +76,7 @@
 
             for (int i = 0; i < szenny.Count; i++)
             {
-                if (szenny[i].Ora.Contains(max) && nap == 0)
+                if (szenny[i].Ora.Contains(max))
                 {
                     nap = i+1;
                     
@@ -87,6 +87,7 @@
                             ora = j+1;
                         }
                     }
+                    break;
                 }
             }
 
